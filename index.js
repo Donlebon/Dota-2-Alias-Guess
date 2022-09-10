@@ -219,7 +219,7 @@ function decreaseLife(){
 }
 
 function displayLosingScreen(){
-    let losingSound = new Audio("LosingSound.mpeg");
+    let losingSound = new Audio("LosingSound.mp3");
     losingSound.play();
     title.textContent = "You have fed to " + localHero.localized_name
     hitPoints.remove()
