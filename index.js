@@ -104,7 +104,7 @@ function addPicandSound(){
     <img src="hero-pic/${localHero.localized_name}.png" alt="Hero-Picture" class = "hero-icon">
     <img src="icon-sound.png" alt="sound-icon" class = "hero-sound">
     `
-    audio = new Audio(`hero-sounds/${localHero.localized_name}.mp3.mpeg`)
+    audio = new Audio(`hero-sounds/${localHero.localized_name}.mp3`)
     heroIcon = document.querySelector(".hero-icon")
     iconSound = document.querySelector(".hero-sound")
     iconSound.addEventListener("click", function(){
@@ -318,9 +318,9 @@ nextLevel.textContent = "Next Opponent"
 
 let killCount = 0
 
-let killStreak = ["1stkill.mp3.mpeg", "2ndkill.mp3.mpeg","3rdkill.mp3.mpeg","4thkill.mp3.mpeg",
-"5thkill.mp3.mpeg","6thkill.mp3.mpeg","7thkill.mp3.mpeg","8thkill.mp3.mpeg","9thkill.mp3.mpeg",
-"10thkill.mp3.mpeg","11thkill.mp3.mpeg"]
+let killStreak = ["1stkill.mp3", "2ndkill.mp3","3rdkill.mp3","4thkill.mp3",
+"5thkill.mp3","6thkill.mp3","7thkill.mp3","8thkill.mp3","9thkill.mp3",
+"10thkill.mp3","11thkill.mp3"]
 
 function killSound(){
     if(killCount > 9){
