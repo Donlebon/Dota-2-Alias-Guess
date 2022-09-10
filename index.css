@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFDE3;
+  font-family: "Silkscreen", sans-serif;
+  display: grid;
+  grid-template-rows: 70vh 30vh;
+}
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("background-images/kunkka.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  font-size: 1.2rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0.5em 0 0.5em;
+  position: relative;
+}
+header .change {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.position {
+  transform: rotate(0);
+  transition-duration: 0.5s;
+}
+
+.translate {
+  transform: rotate(360deg);
+}
+
+.footer {
+  background-color: #FFFDE3;
+  display: grid;
+  grid-template-columns: 23% auto 23%;
+  position: relative;
+  align-items: center;
+  gap: 1em;
+}
+.footer .footer-aside {
+  color: #F65A83;
+  display: grid;
+  grid-column: 3;
+  grid-template-rows: 1fr 1fr;
+}
+.footer .attribute {
+  text-decoration: none;
+  color: #293462;
+}
+.footer .credit {
+  grid-column: 1;
+  font-size: 0.5rem;
+  align-self: flex-end;
+}
+.footer .level {
+  font-size: 2rem;
+  align-self: center;
+}
+.footer .keyboard {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 1;
+}
+.footer .keyboard .key {
+  font-family: "Silkscreen", sans-serif;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  color: white;
+  background-color: #73777B;
+  border-style: none;
+  font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.footer .keyboard .row1, .footer .keyboard .row2 {
+  margin-bottom: 0.5em;
+}
+.footer .keyboard .correctLetter {
+  background-color: #5BB318;
+  transition: 0.3s;
+}
+.footer .keyboard .incorrectLetter {
+  background-color: #F32424;
+  transition: 0.3s;
+}
+
+.heroReveal {
+  font-size: 1.2rem;
+}
+
+.healthTransition {
+  transition: 0.3s;
+}
+
+.hitpoints {
+  background-color: #1E2022;
+  border-radius: 1em;
+  padding: 0.4em;
+  width: 600px;
+  margin: auto;
+}
+
+.healthbar {
+  border-radius: 1em;
+  color: white;
+  padding: 0.8em;
+  font-size: 0.4rem;
+  background-color: #5BB318;
+  width: 100%;
+  text-align: center;
+}
+
+.hints {
+  position: relative;
+  max-width: 200px;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 1.5em;
+}
+.hints .hero-icon {
+  border-radius: 1em;
+  height: 153.562px;
+  width: 275px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.hints .hero-sound {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  cursor: pointer;
+}
+
+.trivia {
+  display: flex;
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: 12px;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.trivia .word-guess {
+  font-family: "Aboreto", "sans-serif";
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 7em;
+}
+.trivia .nextLine {
+  margin-left: 0.5em;
+}
+
+.defeat {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 0.3em;
+  margin-top: 0.5em;
+  transition: 1s;
+}
+
+.playAgain {
+  font-family: "Silkscreen", sans-serif;
+  display: block;
+  margin: auto;
+  margin-top: 0.5em;
+  padding: 0.8em 1.8em;
+  border-radius: 0.3em;
+  border-style: none;
+  background-color: #F32424;
+  color: white;
+  cursor: pointer;
+}
+
+.nextLevel {
+  font-family: "Silkscreen", sans-serif;
+  display: block;
+  margin: auto;
+  margin-top: 0.5em;
+  padding: 0.8em 1.8em;
+  border-radius: 0.3em;
+  border-style: none;
+  background-color: #5BB318;
+  color: white;
+  cursor: pointer;
+}
+
+.finishGame {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  font-size: 2.5rem;
+  color: white;
+}
+
+@media (min-width: 1125px) and (max-width: 1225px) {
+  .footer .keyboard .key {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 975px) and (max-width: 1124px) {
+  .footer .keyboard .key {
+    font-size: 0.9rem;
+  }
+  .hints .hero-icon {
+    height: 150px;
+    width: 225px;
+  }
+}
+@media (min-width: 755px) and (max-width: 975px) {
+  .footer .keyboard .key {
+    font-size: 0.7rem;
+  }
+  .footer .level {
+    font-size: 1.5rem;
+  }
+  .hints .hero-icon {
+    height: 100px;
+    width: 150px;
+  }
+}
+@media (max-width: 755px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .trivia {
+    font-size: 0.8rem;
+    padding-bottom: 10em;
+  }
+  .heroReveal {
+    font-size: 1rem;
+  }
+  .hitpoints {
+    border-radius: 1em;
+    padding: 0.4em;
+    width: 350px;
+    margin: auto;
+  }
+  .healthbar {
+    border-radius: 1em;
+    padding: 0.8em;
+    font-size: 0.4rem;
+  }
+  header {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 0.5em 0.5em 0 0.5em;
+  }
+  header .change {
+    height: 20px;
+    width: 20px;
+    right: 10px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .keyboard {
+    margin-top: 1em;
+    order: -2;
+  }
+  .footer .keyboard .key {
+    font-size: 0.75rem;
+  }
+  .footer .level {
+    font-size: 1.5rem;
+    order: 0;
+    margin: auto;
+  }
+  .footer .credit {
+    text-align: center;
+    font-size: 0.4rem;
+    margin-top: 8em;
+  }
+  .hints {
+    max-width: 400px;
+    order: -1;
+    margin-top: 2em;
+    margin-left: 0em;
+  }
+  .hints .hero-icon {
+    height: 150px;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  .hints .hero-sound {
+    height: 25px;
+  }
+  .defeat {
+    height: 125px;
+    width: 125px;
+  }
+}/*# sourceMappingURL=index.css.map */
