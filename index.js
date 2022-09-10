@@ -104,7 +104,7 @@ function addPicandSound(){
     <img src="/hero-pic/${localHero.localized_name}.png" alt="Hero-Picture" class = "hero-icon">
     <img src="icon-sound.png" alt="sound-icon" class = "hero-sound">
     `
-    audio = new Audio(`/hero-sounds/${localHero.localized_name}.mp3.mpeg`)
+    audio = new Audio(`hero-sounds/${localHero.localized_name}.mp3.mpeg`)
     heroIcon = document.querySelector(".hero-icon")
     iconSound = document.querySelector(".hero-sound")
     iconSound.addEventListener("click", function(){
@@ -324,11 +324,11 @@ let killStreak = ["1stkill.mp3.mpeg", "2ndkill.mp3.mpeg","3rdkill.mp3.mpeg","4th
 
 function killSound(){
     if(killCount > 9){
-        let winningSound = new Audio(`/killing-sound/${killStreak[10]}`);
+        let winningSound = new Audio(`killing-sound/${killStreak[10]}`);
         winningSound.play();
     }
     else if (killCount <= 9){
-        let winningSound = new Audio(`/killing-sound/${killStreak[killCount]}`);
+        let winningSound = new Audio(`killing-sound/${killStreak[killCount]}`);
         winningSound.play();
     }
 }
