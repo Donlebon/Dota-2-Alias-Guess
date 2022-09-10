@@ -290,12 +290,12 @@ header .change {
     font-size: 1.3rem;
     order: 0;
     margin: auto;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
   .footer .credit {
     text-align: center;
     font-size: 0.4rem;
-    margin-top: 1em;
+    margin-bottom: 0em;
   }
   .hints {
     max-width: 400px;
