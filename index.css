@@ -243,7 +243,8 @@ header .change {
     flex-direction: column;
   }
   .trivia {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+    letter-spacing: 4px;
     padding-bottom: 8em;
   }
   .heroReveal {
