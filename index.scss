@@ -329,8 +329,13 @@ header{
     
     }
     .footer{
+        
         display: flex;
         flex-direction: column;
+
+        .footer-aside{
+            grid-template-rows: none;
+        }
 
         .keyboard{
             margin-top: 1em;
@@ -351,7 +356,7 @@ header{
         .credit{
             text-align: center;
             font-size: 0.4rem;
-            margin-top: 6em;
+            margin-top: 1em;
         }
         
     }
@@ -379,5 +384,7 @@ header{
         height: 125px;
         width: 125px;
     }
+
+   
 
 }

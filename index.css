@@ -276,6 +276,9 @@ header .change {
     display: flex;
     flex-direction: column;
   }
+  .footer .footer-aside {
+    grid-template-rows: none;
+  }
   .footer .keyboard {
     margin-top: 1em;
     order: -2;
@@ -292,7 +295,7 @@ header .change {
   .footer .credit {
     text-align: center;
     font-size: 0.4rem;
-    margin-top: 6em;
+    margin-top: 1em;
   }
   .hints {
     max-width: 400px;

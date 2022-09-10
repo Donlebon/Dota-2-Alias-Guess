@@ -101,7 +101,7 @@ let hitPoints = document.querySelector(".hitpoints")
 
 function addPicandSound(){
     hints.innerHTML = `
-    <img src="/hero-pic/${localHero.localized_name}.jpg" alt="Hero-Picture" class = "hero-icon">
+    <img src="/hero-pic/${localHero.localized_name}.jpeg" alt="Hero-Picture" class = "hero-icon">
     <img src="icon-sound.png" alt="sound-icon" class = "hero-sound">
     `
     audio = new Audio(`/hero-sounds/${localHero.localized_name}.mp3.mpeg`)
