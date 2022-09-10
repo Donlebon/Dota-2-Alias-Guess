@@ -244,7 +244,7 @@ header .change {
   }
   .trivia {
     font-size: 0.8rem;
-    padding-bottom: 10em;
+    padding-bottom: 8em;
   }
   .heroReveal {
     font-size: 1rem;
@@ -284,19 +284,20 @@ header .change {
     font-size: 0.75rem;
   }
   .footer .level {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     order: 0;
     margin: auto;
+    padding-bottom: 2em;
   }
   .footer .credit {
     text-align: center;
     font-size: 0.4rem;
-    margin-top: 8em;
+    margin-top: 6em;
   }
   .hints {
     max-width: 400px;
     order: -1;
-    margin-top: 2em;
+    margin-top: 0em;
     margin-left: 0em;
   }
   .hints .hero-icon {

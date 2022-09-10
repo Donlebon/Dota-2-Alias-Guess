@@ -295,7 +295,7 @@ header{
     }
     .trivia{
         font-size: 0.8rem;
-        padding-bottom: 10em;
+        padding-bottom: 8em;
     }
     .heroReveal{
         font-size: 1rem;
@@ -342,15 +342,16 @@ header{
         }
 
         .level{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             order: 0;
             margin: auto;
+            padding-bottom: 2em;
         }
 
         .credit{
             text-align: center;
             font-size: 0.4rem;
-            margin-top: 8em;
+            margin-top: 6em;
         }
         
     }
@@ -359,7 +360,7 @@ header{
     .hints{     
         max-width: 400px;
         order: -1;
-        margin-top: 2em;
+        margin-top: 0em;
         margin-left: 0em;
     
         .hero-icon{
