@@ -1,4 +1,4 @@
-# Dota 2 Hero/Alias Hangman Game
+# Dota 2 Hero Hangman Game
 
 <b> Classic Hangman Game with Dota 2 Heroes! </b>
 
