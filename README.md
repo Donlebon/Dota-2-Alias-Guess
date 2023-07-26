@@ -13,4 +13,4 @@
 # Lessons Learned:
 
 My first ever project! :)
-I am a huge fan of Dota 2 and wanted to create an a fun game for it!
+I am a huge fan of Dota 2 and wanted to create a fun game for it!
