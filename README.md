@@ -9,8 +9,3 @@
 # How It's Made: 
 
 <b>Tech used: </b> HTML, CSS, JavaScript
-
-# Lessons Learned:
-
-My first ever project! :)
-I am a huge fan of Dota 2 and wanted to create a fun game for it!
